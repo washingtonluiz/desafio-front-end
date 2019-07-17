@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import main from '../../css/main';
 import Api from '../../services/Api';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import './index.css';
 
 class App extends Component {
@@ -24,6 +24,7 @@ class App extends Component {
     return (
       <div className="container">
         <Header />
+        <Footer />
       </div>
     )
   }

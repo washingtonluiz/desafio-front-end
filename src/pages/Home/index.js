@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Api from '../../services/Api';
 import Header from '../../components/Header';
+import Main from '../../components/Main';
 import Footer from '../../components/Footer';
 import './index.css';
 
@@ -21,9 +22,13 @@ class App extends Component {
     this.getData();
   }
   render() {
+    const { main } = this.state;
     return (
       <div className="container">
         <Header />
+        <div className="content">
+          <Main main={main} />
+        </div>
         <Footer />
       </div>
     )

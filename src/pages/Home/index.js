@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import main from '../../css/main';
 import Api from '../../services/Api';
+import Header from '../../components/Header';
 import './index.css';
 
 class App extends Component {
@@ -19,12 +21,9 @@ class App extends Component {
     this.getData();
   }
   render() {
-    console.log(this.state.main)
-    console.log(this.state.brasil)
-    console.log(this.state.mundo)
     return (
-      <div>
-        <h1>Home</h1>
+      <div className="container">
+        <Header />
       </div>
     )
   }

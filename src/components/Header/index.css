@@ -1,0 +1,102 @@
+.header {
+  background: #004861;
+  padding: 26px 0;
+}
+.header--box {
+  align-items: center;
+  display: flex;
+}
+.header__box--logo{
+  flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+.header__box--logo--logo {
+  width: 382px;
+}
+.menu-mobile{
+  -moz-transform: rotate(0deg);
+  -moz-transition: .5s ease-in-out;
+  -o-transform: rotate(0deg);
+  -o-transition: .5s ease-in-out;
+  -webkit-transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  cursor: pointer;
+  height: 20px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  width: 24px;
+  z-index: 101;
+}
+.menu-mobile span{
+  -moz-transform: rotate(0deg);
+  -moz-transition: .25s ease-in-out;
+  -o-transform: rotate(0deg);
+  -o-transition: .25s ease-in-out;
+  -webkit-transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  background: #ffffff;
+  display: block;
+  height: 5px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  width: 100%;
+}
+.menu-mobile span:nth-child(1) {
+  top: 0px;
+}
+.menu-mobile span:nth-child(2) {
+  top: 8px;
+}
+.menu-mobile span:nth-child(3) {
+  top: 17px;
+}
+.menu-mobile.open span:nth-child(1) {
+  background: #cc1c1e;
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  top: 18px;
+  transform: rotate(135deg);
+}
+.menu-mobile.open span:nth-child(2) {
+  background: #cc1c1e;
+  left: -60px;
+  opacity: 0;
+}
+.menu-mobile.open span:nth-child(3) {
+  background: #cc1c1e;
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  top: 18px;
+  transform: rotate(-135deg);
+}
+
+@media screen and (max-width: 480px){
+  .header__box--logo--logo {
+    width: 130px;
+  }
+  .header {
+    padding: 15px 0;
+  }
+  .menu-mobile{
+    height: 15px;
+    width: 16px;
+  }
+  .menu-mobile span{
+    height: 3px;
+  }
+  .menu-mobile span:nth-child(1) {
+    top: 0px;
+  }
+  .menu-mobile span:nth-child(2) {
+    top: 5px;
+  }
+  .menu-mobile span:nth-child(3) {
+    top: 11px;
+  }
+} 

@@ -7,7 +7,8 @@ export default class Brasil extends Component {
   constructor(){
     super();
     this.state = {
-      count: 4
+      brasil: [],
+      count: 4,
     }
   }
 
@@ -20,7 +21,7 @@ export default class Brasil extends Component {
   }
 
   render() {
-    const { count } = this.state;
+    const { count} = this.state;
     const { name, data } = this.props.brasil;
     return (
       <div className="wrap box-brasil">
@@ -28,9 +29,11 @@ export default class Brasil extends Component {
         <div className="wrap box-news">
           {data &&
           data.map((item, index) => {
-          return (
-              <News key={index} url={item.url} label={item.label} title={item.title} description={item.description} image={item.image} type={item.type} />
-          )
+            if(index < count){
+              return (
+                <News key={index} url={item.url} label={item.label} title={item.title} description={item.description} image={item.image} type={item.type} />
+              )
+            }
           })
         }
         </div>

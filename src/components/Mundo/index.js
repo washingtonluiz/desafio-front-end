@@ -28,9 +28,11 @@ export default class Mundo extends Component {
         <div className="wrap box-news">
           {data &&
           data.map((item, index) => {
-          return (
-              <News key={index} url={item.url} label={item.label} title={item.title} description={item.description} image={item.image} type={item.type} />
-          )
+            if(index < count){
+              return (
+                <News key={index} url={item.url} label={item.label} title={item.title} description={item.description} image={item.image} type={item.type} />
+              )
+            }
           })
         }
         </div>

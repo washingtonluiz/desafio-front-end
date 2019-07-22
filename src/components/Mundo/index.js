@@ -5,9 +5,9 @@ import News from '../News';
 
 export default class Mundo extends Component {
   render() {
-    const { name, data } = this.props.brasil;
+    const { name, data } = this.props.mundo;
     return (
-      <div className="wrap box-brasil">
+      <div className="wrap box-mundo">
         <h2>{name}</h2>
         <div className="wrap box-news">
           {data &&

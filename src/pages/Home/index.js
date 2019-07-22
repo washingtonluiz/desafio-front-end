@@ -37,7 +37,7 @@ class App extends Component {
         <Advertising />
         <div className="content">
           <Brasil brasil={brasil} />
-          <Mundo brasil={mundo} />
+          <Mundo mundo={mundo} />
         </div>
         <Footer />
       </div>

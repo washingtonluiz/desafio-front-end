@@ -10,6 +10,7 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 20px;
+  padding: 0 20px;
 }
 .box-brasil__more-news--button{
   color: #004761;

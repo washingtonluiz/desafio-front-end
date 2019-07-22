@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Api from '../../services/Api';
 import Header from '../../components/Header';
 import Main from '../../components/Main';
+import Advertising from '../../components/Advertising';
 import Footer from '../../components/Footer';
 import '../../css/variables.css';
 import '../../css/config.css';
@@ -31,6 +32,7 @@ class App extends Component {
         <div className="content">
           <Main main={main} />
         </div>
+        <Advertising />
         <Footer />
       </div>
     )

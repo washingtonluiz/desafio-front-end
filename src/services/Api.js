@@ -147,56 +147,64 @@ const data =
 					"label": "EUA",
 					"title": "Aenean faucibus, est nec lobortis",
 					"description": "Euismod, magna metus ultrices justo, at ornare ex libero vitae est",
-					"image": "216x121-6.jpeg"
+					"image": "216x121-6.jpeg",
+					"type": "collumn"
 				},
 				{
 					"url": "#",
 					"label": "Turismo",
 					"title": "Class aptent taciti sociosqu ad litora",
 					"description": "Proin ut eros sit amet libero pellentesque cursus",
-					"image": "216x121-10.jpeg"
+					"image": "216x121-10.jpeg",
+					"type": "collumn"
 				},
 				{
 					"url": "#",
 					"label": "Internacional",
 					"title": "Commodo lectus neque, a lacinia turpis euismod",
 					"description": "Venenatis, mi id vehicula porta, tortor urna volutpat",
-					"image": "216x121-7.jpeg"
+					"image": "216x121-7.jpeg",
+					"type": "collumn"
 				},
 				{
 					"url": "#",
 					"label": "ONU",
 					"title": "Blandit, ultrices vehicula nunc sagittis",
 					"description": "Consequat id. Vivamus augue ligula, vehicula",
-					"image": "216x121-5.jpeg"
+					"image": "216x121-5.jpeg",
+					"type": "collumn"
 				},
 				{
 					"url": "#",
 					"label": "Oriente Médio",
 					"title": "Blandit, ultrices vehicula nunc sagittis",
 					"description": "Consequat id. Vivamus augue ligula, vehicula",
-					"image": "216x121-5.jpeg"
+					"image": "216x121-5.jpeg",
+					"type": "collumn"
 				},
 				{
 					"url": "#",
 					"label": "Israel",
 					"title": "Commodo lectus neque, a lacinia turpis euismod",
 					"description": "Venenatis, mi id vehicula porta, tortor urna volutpat",
-					"image": "216x121-7.jpeg"
+					"image": "216x121-7.jpeg",
+					"type": "collumn"
 				},
 				{
 					"url": "#",
 					"label": "Síria",
 					"title": "Class aptent taciti sociosqu ad litora",
 					"description": "Proin ut eros sit amet libero pellentesque cursus",
-					"image": "216x121-10.jpeg"
+					"image": "216x121-10.jpeg",
+					"type": "collumn"
 				},
 				{
 					"url": "#",
 					"label": "China",
 					"title": "Aenean faucibus, est nec lobortis",
 					"description": "Euismod, magna metus ultrices justo, at ornare ex libero vitae est",
-					"image": "216x121-6.jpeg"
+					"image": "216x121-6.jpeg",
+					"type": "collumn"
 				}
 			]
 		}

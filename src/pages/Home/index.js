@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Main from '../../components/Main';
 import Advertising from '../../components/Advertising';
 import Brasil from '../../components/Brasil';
+import Mundo from '../../components/Mundo';
 import Footer from '../../components/Footer';
 import '../../css/variables.css';
 import '../../css/config.css';
@@ -26,7 +27,7 @@ class App extends Component {
     this.getData();
   }
   render() {
-    const { main, brasil } = this.state;
+    const { main, brasil, mundo } = this.state;
     return (
       <div className="container">
         <Header />
@@ -36,6 +37,7 @@ class App extends Component {
         <Advertising />
         <div className="content">
           <Brasil brasil={brasil} />
+          <Mundo brasil={mundo} />
         </div>
         <Footer />
       </div>

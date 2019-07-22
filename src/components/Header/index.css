@@ -1,6 +1,6 @@
 .header {
   background: #004861;
-  padding: 26px 0;
+  padding: 26px;
 }
 .header--box {
   align-items: center;
@@ -81,7 +81,7 @@
     width: 130px;
   }
   .header {
-    padding: 15px 0;
+    padding: 15px;
   }
   .menu-mobile{
     height: 15px;

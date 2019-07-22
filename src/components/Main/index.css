@@ -1,0 +1,11 @@
+.box-news{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px){
+  .box-news{
+    flex-direction: column;
+  }
+}

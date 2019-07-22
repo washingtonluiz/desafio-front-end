@@ -1,0 +1,145 @@
+/* componente de dados */
+.news {
+  margin-bottom: 30px;
+}
+.news--data{
+  bottom: 0;
+  color: #ffffff;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+}
+.news--data h2{
+  font-size: 10px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+.news--data span{
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.news--data p{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Destaque */
+.news.destac, .news.row{
+  width: calc(50% - 15px);
+}
+.news-destac {
+  position: relative;
+}
+.news-destac--media {
+  width: 100%;
+}
+.news-destac a {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.news-destac__data{
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.69) 58%, rgba(0,0,0,1) 84%, rgba(0,0,0,1) 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.69) 58%,rgba(0,0,0,1) 84%,rgba(0,0,0,1) 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.69) 58%,rgba(0,0,0,1) 84%,rgba(0,0,0,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* Notícias Horizontais / Notícias Verticais */
+.news-row__data, .news-collumn__data{
+  color: #000000;
+  padding: 5px 20px;
+  position: relative;
+}
+.news-row__data a{
+  bottom: 0;
+  left: 20px;
+  position: absolute;
+}
+.news-row__data h2, .news-collumn__data h2{
+  color: #004861;
+  margin-bottom: 5px;
+}
+.news-row__data span, .news-collumn__data span{
+  font-size: 17px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+
+/* Notícias Horizontais */
+.news-row{
+  display: flex;
+}
+
+/* Notícias Verticais */
+.news.collumn{
+  width: calc((100%/4) - 20px );
+}
+.news-collumn__data{
+  padding: 0;
+}
+.news-collumn__data span{
+  margin-bottom: 5px;
+}
+.news-collumn__data p{
+  margin-bottom: 20px;
+}
+
+/* Dispositivos Tablet */
+@media screen and (max-width: 768px){
+  .news {
+    margin-bottom: 0;
+  }
+  .news.destac {
+    width: 100%;
+  }
+  .news.row {
+    border-top: 1px solid #cecece;
+    padding: 15px;
+    width: 100%;
+  }
+  .news-row, .news-collumn{
+    align-items: self-start;
+  }
+  .news-destac__data{
+    background: transparent;
+    color: #000000;
+    position: relative;
+  }
+  .news.collumn{
+    width: 100%;
+  }
+  .news-collumn{
+    border-top: 1px solid #cecece;
+    display: flex;
+    padding: 15px;
+  }
+  .news-collumn__data{
+    padding: 5px 20px;
+  }
+}
+
+/* Dispositivos Celulares */
+@media screen and (max-width: 480px){
+  .news-row > img {
+    width: 96px;
+  }
+  .news-row__data a{
+    display: block;
+    margin-top: 20px;
+    position: initial;
+  }
+  .news-collumn > img {
+    width: 145px;
+  }
+  .news-collumn__data{
+    padding: 5px 10px;
+  }
+  .news-row__data span, .news-collumn__data span{
+    font-size: 12px;
+  }
+}

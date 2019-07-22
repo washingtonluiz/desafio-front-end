@@ -3,6 +3,8 @@ import Api from '../../services/Api';
 import Header from '../../components/Header';
 import Main from '../../components/Main';
 import Footer from '../../components/Footer';
+import '../../css/variables.css';
+import '../../css/config.css';
 import './index.css';
 
 class App extends Component {

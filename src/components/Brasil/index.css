@@ -6,6 +6,23 @@
   text-transform: uppercase;
 }
 
+.box-brasil__more-news{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.box-brasil__more-news--button{
+  color: #004761;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: opacity 0.5s ease-in-out;
+}
+.box-brasil__more-news--button:hover{
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 768px){
   .box-brasil{
     padding: 15px 0;

@@ -3,6 +3,7 @@ import Api from '../../services/Api';
 import Header from '../../components/Header';
 import Main from '../../components/Main';
 import Advertising from '../../components/Advertising';
+import Brasil from '../../components/Brasil';
 import Footer from '../../components/Footer';
 import '../../css/variables.css';
 import '../../css/config.css';
@@ -25,7 +26,7 @@ class App extends Component {
     this.getData();
   }
   render() {
-    const { main } = this.state;
+    const { main, brasil } = this.state;
     return (
       <div className="container">
         <Header />
@@ -33,6 +34,9 @@ class App extends Component {
           <Main main={main} />
         </div>
         <Advertising />
+        <div className="content">
+          <Brasil brasil={brasil} />
+        </div>
         <Footer />
       </div>
     )

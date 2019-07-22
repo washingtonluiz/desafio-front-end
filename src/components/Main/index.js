@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './index.css';
 import News from '../News';
 class Main extends Component {
-
-  
-  
-
   render() {
     const { data } = this.props.main;
     return (

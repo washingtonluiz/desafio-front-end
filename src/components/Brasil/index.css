@@ -1,0 +1,16 @@
+.box-brasil > h2 {
+  color: #004761;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px){
+  .box-brasil{
+    padding: 15px 0;
+  }
+  .box-brasil > h2{
+    padding: 0 15px;
+  }
+}
